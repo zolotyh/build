@@ -8,6 +8,9 @@ sudo: required
 addons:
   chrome: stable
 
+env:
+  - DART_VM_OPTIONS=--preview-dart-2
+
 after_failure:
  - tool/report_failure.sh
 ##################
